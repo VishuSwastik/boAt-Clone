@@ -1,0 +1,558 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#f5f9ff ;;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links li {
+    list-style: none;
+    position: relative;
+}
+
+.nav-links li a {
+    padding: 10px;
+    transition: font-weight 0.3s ease;
+}
+
+/* Add line under Categories even when not hovering */
+.nav-links li .category-link {
+    border-bottom: 2px solid #ff4c4c;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #ff4c4c;
+}
+
+/* Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Search Cart */
+.search-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+#search-input {
+    padding: 10px;
+    padding-right: 50px; 
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons img {
+    width: 30px;  
+    height: 30px; 
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide 12s infinite; 
+}
+
+.slide {
+    min-width: 100%; 
+}
+
+/* Sliding Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Image Styles */
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #f5f9ff;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 200px;
+}
+
+.service-item img {
+    width: 30px;
+   margin-right: 15px; 
+   
+}
+
+.service-item p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.service-item strong {
+    font-size: 16px;
+    color: #000;
+}
+/* Festive Sale Section */
+.festive-sale {
+    background-color: #f5f9ff; 
+    padding: 10px 80px;
+}
+
+.festive-sale h2 {
+    font-size: 28px;
+    color: #000; 
+    margin-bottom: 20px;
+}
+
+.festive-sale h2 span {
+    font-weight: bold;
+    color: #000; 
+}
+
+.festive-sale .underline {
+    text-decoration: underline; 
+    text-decoration-color: red; 
+}
+
+.festive-sale .banner img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 18%;
+    margin-bottom: 20px; 
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-card .tag {
+    background-color: #151414; 
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card span {
+    font-size: 12px;
+   color:rgb(15, 15, 15);
+}
+
+.shope-by-categery {
+    background-color: #f5f9ff;
+}
+
+.shop-by-header {
+   h2 {
+    margin-left: 50px;
+    color: #3d3c3c;
+  
+   }
+   margin-bottom: 20px;
+   
+}
+
+.shop-categories ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox to align categories horizontally */
+    flex-wrap: wrap; /* Allow categories to wrap to a new line if space runs out */
+    justify-content: center; /* Center the categories horizontally */
+  }
+  
+  .shop-categories li {
+    margin: 20px; /* Add some margin around each category */
+    display: grid; /* Use Grid to manage the layout of each category */
+    grid-template-columns: 1fr; /* Use one fractional unit for the icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    text-align: center;
+    justify-content: space-between; 
+   
+  }
+  
+  .shop-categories img {
+    width: 100px; /* Set a fixed width for the icons */
+    height: 100px; /* Set a fixed height for the icons */
+    margin-bottom: 10px; /* Add some space between the icon and the text */
+  }
+  
+  .shop-categories span {
+    font-size: 16px; /* Set the font size for the category names */
+    color: #333; /* Set the text color */
+  }
+
+  /*scorll img section */
+  .img-scorll{
+    background-color:#f5f9ff ;
+  }
+  .img-scorll h2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+    
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    overflow-y: auto;
+  
+  }
+  .container ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .card {
+    width: 330px;
+    height: 330px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+
+  .card:hover video {
+    display: block;
+    
+  }
+  .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+  }
+  
+.content 
+    .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+   
+  }
+
+  /*life style*/
+
+  .container {
+    display: flex; /* Arrange sections horizontally */
+    justify-content: space-around; /* Even spacing */
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .section {
+    width: 25%; /* Each section occupies 25% of the width */
+    text-align: center; /* Center the text within each section */
+    padding: 20px; /* Add padding for visual space */
+  }
+  
+  .section img {
+    max-width: 100%; /* Images scale to fit their container */
+    height: auto;
+    border-radius: 30px;
+  }
+  
+ .lifestyle h2 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+ }
+
+ .best-labels {
+    display: flex;
+   
+
+ }
+  .best-labels label{
+   margin-right: 30px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+ }
+
+ /*tribe*/
+
+
+ .container-tribe{
+    max-height: 570px;
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    stroke-width: none;
+   margin-left: 30px;
+ }
+
+ .container-tribe ::-webkit-scrollbar {
+    width: 0;
+   display: none;
+ }
+
+ .container-tribe .item {
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    border: #3d3c3c;
+   
+ }
+
+ .card-tribe {
+    width: 250px;
+    height: 430px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+ 
+
+  .card-tribe video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+ 
+  .card-tribe .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+  }
+  
+.content 
+    .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+   
+  }
+
+  .blogs h2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+  .blog-text .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    width:fit-content;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    background-color: #ede3e3;
+    align-items: center;
+    margin-left: 50px;
+    margin-left: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .card-blog{
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px;
+
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-content p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    width:fit-content;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    background-color: #ede3e3;
+    align-items: center;
+  }
+
+  .card-content .btn img {
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  
